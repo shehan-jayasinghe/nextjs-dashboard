@@ -1,64 +1,45 @@
 # Next.js Dashboard
 
-A dashboard application built with the Next.js App Router and TypeScript.
+A dashboard application built with the Next.js App Router, React, TypeScript, Tailwind CSS, authentication, validation, and PostgreSQL integration.
 
-## Overview
+## Stack
 
-This repository is based on the Next.js App Router dashboard project and contains a structured dashboard application with an `app/` directory, public assets, reusable configuration, and supporting scripts.
-
-## Technology Stack
-
-- Next.js 15.0.0 RC
-- React 19 RC
-- TypeScript 5.5
-- Tailwind CSS 3.4
-- NextAuth 5 beta
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- NextAuth
 - Zod
-- bcrypt
-- `@vercel/postgres`
+- PostgreSQL
 - pnpm
 
-The project requires Node.js `>=20.12.0`.
-
-## Repository Structure
-
-```text
-.
-├── app/                 # App Router routes and UI
-├── public/              # Static assets
-├── scripts/             # Supporting scripts
-├── next.config.mjs      # Next.js configuration
-├── tailwind.config.ts   # Tailwind configuration
-├── package.json         # Dependencies and scripts
-└── pnpm-lock.yaml       # Locked dependencies
-```
-
-## Development
-
-Install dependencies with pnpm and start the development server:
+## Getting Started
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Create a production build:
+The development server is normally available at `http://localhost:3000`.
+
+## Production
 
 ```bash
 pnpm build
 pnpm start
 ```
 
-The development server is normally available at `http://localhost:3000`.
+## Structure
 
-## Authentication & Data
+- `app/` — routes and UI
+- `public/` — static assets
+- `scripts/` — supporting scripts
+- configuration files — framework, styling, and dependency settings
 
-The project includes NextAuth and bcrypt for authentication-related functionality and `@vercel/postgres` for PostgreSQL access. Keep authentication secrets and database credentials in environment variables rather than source control.
+## Configuration
 
-## Validation
+Authentication secrets and database credentials must be supplied through environment variables and should never be committed.
 
-Zod is included for runtime schema validation, helping validate application inputs at API or server boundaries.
+## Status
 
-## Project Status
-
-This repository is a dashboard application/course implementation using the Next.js App Router with a modern TypeScript and Tailwind CSS stack.
+A dashboard-focused Next.js project for learning and implementing modern App Router patterns.
